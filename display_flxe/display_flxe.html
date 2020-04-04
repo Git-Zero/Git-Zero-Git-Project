@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<title>Display:Flex</title>
+	</head>
+	<body>
+		
+		<header><h1>display:Flex</h1></header>
+		<div id="container">
+			<p>display:Flex<span>伸缩容器 - Flex Container</span> <em>定义在Container</em></p>
+			<p>伸缩容器 - Flex Container<span>下面的容器都是伸缩项 - Flex - Item</span></p>
+			<p>伸缩项默认生成主轴（main axis）和侧轴（cross axis），主轴从左往右，侧轴从上往下</p>
+			<div class="bottom"></div>
+			<p>Flex-Direction<span>伸缩容器</span>改变主轴的方向 <em>定义在Container</em></p>
+			<ul>
+				<li>Row(default)<span>Flex-Direction: Row</span>主轴-水平从左到右排列 1，2，3</li>
+				<li>Row-Reverse<span>Flex-Direction: Row-Reverse</span>主轴-水平从右到左排列 1，2，3</li>
+				<li>column<span>Flex-Direction: column</span>主轴-垂直从上至下排列 1，2，3</li>
+				<li>column-Reverse<span>Flex-Direction: column-Reverse</span>主轴-垂直从下至上排列 1，2，3</li>
+			</ul>
+			<div class="Flex-Direction">
+				<div class="box">0</div>
+				<div class="box">2</div>
+				<div class="box">3</div>
+				<div class="box">4</div>
+				<div class="box">5</div>
+				<div class="box">6</div>
+				<div class="box">7</div>
+				<div class="box">8</div>
+				<div class="box">9</div>
+		
+			</div>
+			<div class="bottom"></div>
+			<p>Flex-Wrap<span>伸缩容器</span>改变纵轴方向，根据主轴的方向来改变</p>
+			<ul>
+				<li>Nowrarp(default)</li>
+				<li>Wrap<span>默认侧轴从上至下</span></li>
+				<li>Wrap-Reverse<span>反转 从下至上</span></li>
+			</ul>
+			<div class="bottom"></div>
+			<p>Order<span>伸缩项</span>改变指定伸缩项的位置（下标从0开始）<em>定义在伸缩项 - Flex - Item</em></p>
+			<div class="bottom"></div>
+			<p>Justify-content<span>伸缩容器</span>控制伸缩项在主轴的展现方式 <em>定义在Container</em></p>
+			<ul>
+				<li>Flex-Start(default)<span>元素在主轴（页面）上由左或者上开始排列</span></li>
+				<li>Flex-end<span>元素在主轴（页面）上由右或者下开始排列</span></li>
+				<li>center<span>元素在主轴（页面）上居中排列</span></li>
+				<li>space-between<span>元素在主轴（页面）上左右两端或者上下两端开始排列</span></li>
+				<li>space-around<span>每个元素两侧的间隔相等。所以，元素之间的间隔比元素与边框的间隔大一倍。</span></li>
+			</ul>
+			<div class="bottom"></div>
+			<p>Aligin-items<span>伸缩容器</span>控制伸缩项在侧轴的展现方式 <em>定义在Container</em></p>
+			<ul>
+				<li>flex-start<span>弹性盒子元素的侧轴（纵轴）起始位置的边界紧靠住该行的侧轴起始边界（靠上对齐）。</span></li>
+				<li>flex-end<span>弹性盒子元素的侧轴（纵轴）起始位置的边界紧靠住该行的侧轴结束边界。（靠下对齐）</span></li>
+				<li>center<span>弹性盒子元素在该行的侧轴（纵轴）上居中放置。（居中对齐）</span></li>
+				<li>baseline<span>如弹性盒子元素的行内轴与侧轴为同一条，则该值与'flex-start'等效。其它情况下，该值将参与基线对齐。（靠上对齐）</span></li>
+			</ul>
+			<div class="bottom"></div>
+			<p>Align-content<span>伸缩容器</span>控制伸缩项所有组成的行（列）在侧轴的展现方式 <em>定义在Container</em></p>
+			<ul>
+				<li>flex-start<span>打包到容器开头的行</span></li>
+				<li>flex-end<span>包装在容器末端的行</span></li>
+				<li>center<span>打包到容器中心的行</span></li>
+				<li>space-between<span>线均匀分布；第一行在容器的开头，而最后一行在容器的结尾</span></li>
+				<li>space-around<span>线均匀分布，它们之间的距离相等</span></li>
+				<li>stretch<span>线拉伸以占用剩余空间</span></li>
+			</ul>
+			<div class="bottom"></div>
+			<p>flex-grow <span>伸缩项</span>控制伸缩项在伸缩行的伸展程度 <em>定义在伸缩项 - Flex - Item</em></p>
+			<p>flex-grow: integer </p>
+			<p>flex-shrink<span>伸缩项</span>控制伸缩项在伸缩行的收缩程度 <em>定义在伸缩项 - Flex - Item</em></p>
+			<p>flex-shrin: integer </p>
+		</div>
+		
+		<nav>
+			<a href="#"><span>首页</span></a>
+			<a href="#"><span>视频</span></a>
+			<a href="#"><span>代码</span></a>
+			<a href="#"><span>来源</span></a>
+			<a href="#" class="sing sign_in"><span>登录</span></a>
+			<a href="#" class="sing sign_up"><span>注册</span></a>
+		</nav>
+		
+		<div class="box-container">
+			<div class="item">
+				<span></span>
+			</div>
+			<div class="item">
+				<span></span>
+				<span></span>
+			</div>
+			<div class="item">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<div class="item">
+				<div class="column">
+					<span class="item"></span>
+				    <span class="item"></span>
+				</div>
+				<div class="column">
+					<span class="item"></span>
+					<span class="item"></span>
+				</div>
+			</div>
+			<div class="item">
+				<div class="row">
+				    <span></span>
+				    <span></span>
+				</div>
+				<div class="row">
+				    <span></span>
+				</div>
+				<div class="row">
+				    <span></span>
+				    <span></span>
+				</div>
+			</div>
+			<div class="item">
+				<div class="row">
+				    <span>1</span>
+				    <span>2</span>
+					<span>3</span>
+				</div>
+				<div class="row">
+				    <span>4</span>
+					<span>5</span>
+					<span>6</span>
+				</div>
+			</div>
+		</div>
+		<div class="nav">
+			<div class="nav-box">
+				<div class="nav-left">
+					<a href="javascript:;"><span>Home1</span></a>
+					<a href="javascript:;"><span>Home2</span></a>
+					<a href="javascript:;"><span>Home3</span></a>
+					<a href="javascript:;"><span>Home4</span></a>
+					<a href="javascript:;"><span>Home5</span></a>
+				</div>
+				<div class="nav-right">
+					<a href="javascript:;"><span>登录</span></a>
+					<a href="javascript:;"><span>注册</span></a>
+				</div>
+			</div>
+		</div>
+		<div class="html-container">
+			<div class="header">Header</div>
+			<div class="main-container">
+				<div class="container-left">Left</div>
+				<div class="container-center">center</div>
+				<div class="container-right">Right</div>
+			</div>
+			<footer>Footer</footer>
+		</div>
+	</body>
+</html>
